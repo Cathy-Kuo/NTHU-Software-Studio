@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title>hw01</title>
+		<link rel="stylesheet" type="text/css" href="hw01.css">
+	</head>
+	<body id="cat" onload="ini()">
+		<div >
+			<header>
+				.
+			</header>
+			 <div class="row">
+					<div class="col-lg-1">
+					</div>
+					<div class="col-lg-7">
+						<canvas width="850px" height="800px" id="art"></canvas>
+					</div>
+					<div class="col-sm-4" >
+						<img src="o.PNG" alt="" width="400" height="650" id="o">
+						<button onclick="draw('p')" type="button" id="pen" ><img src="pen.png" width="38" height="38"></button>
+						<button onclick="draw('e')" type="button" id="eraser" ><img src="eraser.png" width="38" height="38"></button>
+						<button onclick="shape(4)" type="button" id="cir" ><img src="cir.png" width="38" height="38"></button>
+						<button onclick="shape(3)" type="button" id="tri" ><img src="tri.png" width="38" height="38"></button>
+						<button onclick="shape(2)" type="button" id="rec" ><img src="rec.png" width="38" height="38"></button>
+						<button onclick="clearAll('c')" type="button" id="reset" ><img src="reset.jpg" width="45" height="45"></button>
+						<div id="widthSlider"> Width:  <input type="range" id="ww" min="1" max="100" value="10" class="slider"  onchange="WidthSize(this.value)"> </div>
+						<div id="fontSize"> Size:  <input type="range" id="FS" min="20" max="100" value="30" class="slider" onchange="FontSize(this.value)"> </div>
+						<div id="fontType"> Type:
+							<Select id="selector" onchange="FontType(this.value);">
+								<option value="one">Arial</option>
+								<option value="two">Courier New</option>
+								<option value="three">Cursive</option>
+								<option value="four">Fantasy</option>
+								<option value="five">Monospace</option>
+							 </Select>
+						</div>
+						<div id="Colors"> Colors: 
+							<div id='red' onclick="chooseColor('red')" class="color"></div>
+							<div id='orange' onclick="chooseColor('orange')" class="color"></div>
+							<div id='yellow' onclick="chooseColor('yellow')" class="color"></div>
+							<div id='green' onclick="chooseColor('green')" class="color"></div>
+							<div id='blue' onclick="chooseColor('blue')" class="color"></div>
+							<div id='blueviolet' onclick="chooseColor('blueviolet')" class="color"></div>
+							<div id='purple' onclick="chooseColor('purple')" class="color"></div>
+							<div id='black' onclick="chooseColor('black')" class="color"></div>
+							<div id='white' onclick="chooseColor('white')" class="color"></div>
+						</div>
+						<div id="Text"> Text: 
+							<input type="text" id="text" >
+							<input type="button" id="text2"  onclick="TextIn('text')" value="enter"><br/>
+						</div>
+						<button onclick="Undo()" type="button" id="undo" ><img src="undo.png" width="45" height="45"></button>
+						<button onclick="Redo()" type="button" id="redo" ><img src="redo.png" width="45" height="45"></button>
+						<div id="ima">Image:<input type="file" id="imageLoad" name="imageLoad"/></div>
+						<a id="download" download="myImage.jpg" href="" onclick="download_img(this);"><img src="down.png" width="45" height="45"></a>
+					</div>
+				</div>
+  		</div>
+		<script src="hw01.js"></script>
+	</body>
+</html>
