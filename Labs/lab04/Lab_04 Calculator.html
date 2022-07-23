@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Lab_02 Calculator</title>
+
+		<!-- CSS and javascript -->
+		<link rel="stylesheet" type="text/css" href="Lab_04.css">
+	</head>
+	<body style="background-color:gray;">
+		<div id="calculator">
+			<div>
+				<input type="text" class="display" id="screen" value="Hello~" readonly>
+			</div>
+			<table style="width:100%; table-layout:fixed ;" border="0" cellpadding="0">
+				<tr class="row">
+					<td><input onclick="clearall('C')" type="button" value="C" class="btn btn3" ></td>
+					<td><input onclick="show(')')" type="button" value=")" class="btn btn3" ></td>
+					<td><input onclick="show('(')" type="button" value="(" class="btn btn3" ></td>
+					<td><input onclick="show('/')" type="button" value="÷" class="btn btn2" ></td>
+				</tr>
+				<tr class="row">
+					<td><input onclick="show('7')" type="button" value="7" class="btn" ></td>
+					<td><input onclick="show('8')" type="button" value="8" class="btn" ></td>
+					<td><input onclick="show('9')" type="button" value="9" class="btn" ></td>
+					<td><input onclick="show('*')" type="button" value="×" class="btn btn2" ></td>
+				</tr>
+				<tr class="row">
+					<td><input onclick="show('4')" type="button" value="4" class="btn" ></td>
+					<td><input onclick="show('5')" type="button" value="5" class="btn" ></td>
+					<td><input onclick="show('6')" type="button" value="6" class="btn" ></td>
+					<td><input onclick="show('-')" type="button" value="-" class="btn btn2" ></td>
+				</tr>	
+				<tr class="row">
+					<td><input onclick="show('1')" type="button" value="1" class="btn" ></td>
+					<td><input onclick="show('2')" type="button" value="2" class="btn" ></td>
+					<td><input onclick="show('3')" type="button" value="3" class="btn" ></td>
+					<td><input onclick="show('+')" type="button" value="+" class="btn btn2" ></td>
+				</tr>
+				<tr class="row">
+					<td colspan=2><input type="button" value="0" class="btn" style="width:100%;border-radius:40px"></td>
+					<td><input onclick="show('.')" type="button" value="." class="btn" ></td>
+					<td><input onclick="eva('=')" type="button" value="=" class="btn btn2" ></td>
+				</tr>
+			</div>
+		</div>
+		<script src="Lab_04.js"></script>
+	</body>
+</html>

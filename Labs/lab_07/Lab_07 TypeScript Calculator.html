@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Lab_07</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="Lab_07.css">	
+		<!-- ToDo 4 :Include your JavaScript file here -->
+		
+	</head>
+	<body style="background-color:gray;" onload="load();">
+
+
+		<script>	
+			//TypeScript's class
+			var calc
+			function load(){
+				calc = new Calculator(document.getElementById("screen"));
+			}				
+		</script>
+		<div id="calculator">
+			<div>
+				<input type="text" class="display" id="screen" value="0" readonly>
+			</div>
+			<table style="width:100%; table-layout:fixed ;" border="0" cellpadding="0">
+				<tr class="row">
+					<td><input type="button" value="C" class="btn btn3" onClick="calc.calculate(this.value)"></td>
+					<td><input type="button" value=")" class="btn btn3" onClick="calc.calculate(this.value)"></td>
+					<td><input type="button" value="(" class="btn btn3" onClick="calc.calculate(this.value)"></td>
+					<td><input type="button" value="÷" class="btn btn2" onClick="calc.calculate('/')"></td>
+				</tr>
+				<tr class="row">
+					<td><input type="button" value="7" class="btn" onClick="calc.calculate(this.value)"></td>
+					<td><input type="button" value="8" class="btn" onClick="calc.calculate(this.value)"></td>
+					<td><input type="button" value="9" class="btn" onClick="calc.calculate(this.value)"></td>
+					<td><input type="button" value="×" class="btn btn2" onClick="calc.calculate('*')"></td>
+				</tr>
+				<tr class="row">
+					<td><input type="button" value="4" class="btn" onClick="calc.calculate(this.value)"></td>
+					<td><input type="button" value="5" class="btn" onClick="calc.calculate(this.value)")></td>
+					<td><input type="button" value="6" class="btn" onClick="calc.calculate(this.value)"></td>
+					<td><input type="button" value="-" class="btn btn2" onClick="calc.calculate(this.value)"></td>
+				</tr>	
+				<tr class="row">
+					<td><input type="button" value="1" class="btn" onClick="calc.calculate(this.value)"></td>
+					<td><input type="button" value="2" class="btn" onClick="calc.calculate(this.value)"></td>
+					<td><input type="button" value="3" class="btn" onClick="calc.calculate(this.value)"></td>
+					<td><input type="button" value="+" class="btn btn2" onClick="calc.calculate(this.value)"></td>
+				</tr>
+				<tr class="row">
+					<td colspan=2><input type="button" value="0" class="btn" onClick="calc.calculate(this.value)" style="width:100%;"></td>
+					<td><input type="button" value="." class="btn" onClick="calc.calculate(this.value)"></td>
+					<td><input type="button" value="=" class="btn btn2" onClick="calc.calculate(this.value)"></td>
+				</tr>
+			</div>
+		</div>
+	</body>
+	<script src="Lab_07.js"></script>
+</html>
