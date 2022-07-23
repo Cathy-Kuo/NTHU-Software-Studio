@@ -1,0 +1,374 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  padding-top: 56px;
+}
+
+@media screen and (max-width: 800px) {
+  #Out{
+    position: absolute;
+    left:75%;
+    cursor: pointer;
+  }
+  
+  #User{
+    position: absolute;
+    left:60%;
+    top: 12%;
+    cursor: pointer;
+  }
+  
+  #Pen{
+    position: absolute;
+    left:47%;
+    top: 12%;
+    cursor: pointer;
+  }
+
+  #GF{
+    position: relative;
+    left:0;
+    color:	#EE82EE;
+    font-size: 28px;
+  }
+
+  #bo{
+    background-image: url('111.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      height: auto;
+      max-width: 100%;
+  }
+
+  .sidenav {
+    height: 500px;
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 140px;
+    left: 0;
+    background-color:transparent;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  #makeUp{
+    position: relative;
+    top:20px;
+    left:-8px;
+  }
+  
+  #dressUp{
+    position: relative;
+    top:30px;
+    left:-8px;
+  }
+  #Leisure{
+    position: relative;
+    top:40px;
+    left:-8px;
+  }
+
+  #Cate{
+    font-size: 18px;
+    position: relative;
+    top:5%;
+    left:7%;
+  }
+
+  #post_list{
+    position: relative;
+    left:27%;
+    width:260px;
+  }
+
+  #comm{
+    position: relative;
+    left:27%;
+    color: #fff;
+    background-color: #FFB7DD;
+    width:150px;
+  }
+
+  #commentsqu{
+    position: relative;
+    left:27%;
+    width:260px;
+  }
+
+  #cmt_btn{
+    position: relative;
+    left:65%;
+  }
+
+  #cmt_list{
+    position: relative;
+    left:27%;
+    width:260px;
+  }
+
+  #mypost{
+    position: relative;
+    left:27%;
+    top:3%;
+    color: #FFB7DD;
+    background-color: #fff;
+    width:130px;
+  }
+  #perpro{
+    position: relative;
+    left:27%;
+    color: #FFB7DD;
+    background-color: #fff;
+    width:260px;
+  }
+  #profile{
+    position: relative;
+    left:27%;
+    color: #FFB7DD;
+    background-color: #fff;
+    width:260px;
+    height:60px;
+  }
+  #post_btn{
+    position: relative;
+    left:80%;
+    top:-25px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #Out{
+    position: relative;
+    left:75%;
+    cursor: pointer;
+  }
+  
+  #User{
+    position: relative;
+    left:65%;
+    top: 12%;
+    cursor: pointer;
+  }
+  
+  #Pen{
+    position: relative;
+    left:55%;
+    top: 12%;
+    cursor: pointer;
+  }
+
+  #GF{
+    position: relative;
+    left:5%;
+    color:	#EE82EE;
+    font-size: 28px;
+  }
+
+  #bo{
+    background-image: url('123.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      height: auto;
+      max-width: 100%;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 56px;
+    left: 2%;
+    background-color:transparent;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  #makeUp{
+    position: relative;
+    top:8%;
+    left:10%;
+  }
+  
+  #dressUp{
+    position: relative;
+    top:10%;
+    left:10%;
+  }
+  #Leisure{
+    position: relative;
+    top:12%;
+    left:10%;
+  }
+
+  #Cate{
+    position: relative;
+    top:5%;
+    left:7%;
+  }
+
+  #cmt_btn{
+    position: relative;
+    left:90%;
+  }
+  #post_btn{
+    position: relative;
+    left:90%;
+    top:-25px;
+  }
+  
+}
+
+
+
+.useruser:hover:after{
+  content:attr(data-prompt);
+  position: absolute;;
+  left:30%;
+  top: 80%;
+  font-size: 12px;
+  max-width:100%;
+  height: auto;
+  text-align:center;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 999;
+  }
+
+  .pen:hover:after{
+    content:attr(data-prompt1);
+    position: absolute;;
+    left:30%;
+    top: 80%;
+    font-size: 12px;
+    max-width:100%;
+    height: auto;
+    text-align:center;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 999;
+    }
+
+.log:hover:after{
+    content:attr(data-prompt2);
+    position: absolute;;
+    left:30%;
+    top: 80%;
+    font-size: 12px;
+    max-width:100%;
+    height: auto;
+    text-align:center;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+/* #edit:hover:after{
+  content:attr(data-prompt3);
+  position: absolute;
+  left:20%;
+  top: 10%;
+  font-size: 12px;
+  max-width:100%;
+  height: auto;
+  text-align:center;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 999;
+} */
+
+
+
+
+
+.text-white-50 { color: rgba(255, 255, 255, .5); }
+
+.bg-purple { background-color: var(--purple); }
+
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.lh-100 { line-height: 1; }
+.lh-125 { line-height: 1.25; }
+.lh-150 { line-height: 1.5; }
+
+
+/* post */
+
+#comment{
+  position: relative;
+  top:3px;
+}
+
+#Type{
+  position: relative;
+  left:2%;
+  top:15px;
+}
+
+#profile{
+  font-family: serif;
+  color: 	#FF88C2;
+}
+
+#anima {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+#toop{
+  background-color: #FFB7DD;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

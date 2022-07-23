@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+</html>
+
+<head>
+    <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content=""> -->
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+    <title>Girls' Forum</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/offcanvas.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body class="bg-light" id="bo">
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color:#FFE4E1">
+        <a class="navbar-brand " href="javascript:window.location.reload()" id="GF" >Girls' Forum</a>
+        <!-- <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <!-- <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault"> -->
+            <!-- <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a> -->
+                    <div id="Out" class="out" >
+                        <a class="log" href="signin.html">Login</a>
+                    </div>
+                    <div class="useruser" data-prompt="Me" id="User">  
+                        <a class="uuser" href="user.html"><img src="user.png" width="55" height="55"></a>
+                    </div>
+                    <div id="Pen" class="pen" data-prompt1="Post">
+                        <a class="postpost" href="post.html" id="pen"><img src="pen.png" alt="" width="50" height="50"></a>
+                    </div>
+                <!-- </li>
+            </ul> -->
+        <!-- </div> -->
+    </nav>
+
+    <div class="sidenav">
+        <h3 id="Cate">Categories</h3>
+        <a href="category.html?1" id="makeUp" class="list_item"><img src="lips.png" alt="" width="90" height="90" >Makeups</a>
+        <a href="category.html?2" id="dressUp" class="list_item"><img src="dress.jpg" alt="" width="90" height="90" >Dressup</a>
+        <a href="category.html?3" id="Leisure" class="list_item"><img src="leisure.png" alt="" width="90" height="90">Leisure</a>
+    </div>
+
+    <main role="main" class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-9">
+       
+
+            <div class="d-flex align-items-center p-3 my-3 text-white-50 rounded box-shadow" id="toop">
+                <img class="mr-3" src="girl.png" alt="" width="55" height="55">
+                <div class="lh-100">
+                    <h4 class="mb-0 text-white lh-100" id="anima">This forum provides girls to share their points of view!</h4>
+                </div>
+            </div>
+            <div id="post_list">
+            </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+
+        <!-- <div class="my-3 p-3 bg-white rounded box-shadow"> -->
+            <!-- <h5 class="border-bottom border-gray pb-2 mb-0">New Post</h5>
+            <textarea class="form-control" rows="5" id="comment" style="resize:none"></textarea> -->
+            <!-- <div class="media text-muted pt-3">
+                <button id="post_btn" type="button" class="btn btn-success">Submit</button>
+            </div> -->
+        <!-- </div> -->
+    </main>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/offcanvas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Signin Page</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="css/signin.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/signin.js"></script>
+</head>
+
+<body class="text-center" background="img/123.jpg">
+  <div id="custom-alert">
+  </div>
+  <div id="gilfo">
+    <h1>Girls Forum</h1>
+  </div>
+  <div class="form-signin" id="signinsqua">
+    <h2 class="h3 mb-3 font-weight-normal">Login in</h2>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-sm btn-info btn-block" id="btnLogin" style="width:100px;height:30px;">Login in</button>
+    <button class="btn btn-sm btn-info btn-block" id="btngoogle">Login in with Google</button>
+    <!-- <button class="btn btn-lg btn-secondary btn-block" id="btnSignUp">New account</button> -->
+  </div>
+  <div class="form-newAcc" id="newsqua">
+    <h2 class="h3 mb-3 font-weight-normal">New Account</h2>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="newEmail" class="form-control" placeholder="Email address" required>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="newPassword" class="form-control" placeholder="Password" required>
+    <label for="inputName" class="sr-only">NickName</label>
+    <input type="text" id="newName" class="form-control" placeholder="Nick Name" required>
+    <button class="btn btn-sm btn-success btn-block" id="btnSignUp">New account</button>
+  </div>
+</body>
+
+</html>

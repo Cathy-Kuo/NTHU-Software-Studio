@@ -1,0 +1,108 @@
+html,
+body {
+  height: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  #signinsqua{
+    position: relative;
+    left:-5%;
+    top:20%;
+    width:350px;
+  }
+
+  #newsqua{
+    position: relative;
+    left:-5%;
+    top:10%;
+    width:350px;
+  }
+}
+
+
+body {
+  /* display: -ms-flexbox;
+  display: -webkit-box; */
+  display: flex;
+  flex-direction: column;
+  /* -ms-flex-align: center;
+  -ms-flex-pack: center; */
+  /* -webkit-box-align: center; */
+  align-items: flex-end;
+  /* -webkit-box-pack: center; */
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-position: center;
+  background-size: cover;
+  align-content:space-around;
+
+}
+
+h1{
+  position:absolute;
+  color: pink;
+  top:20px;
+  left:20px;
+  font-size: 80px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.form-signin {
+  position: relative;
+  width: 100%;
+  max-width: 330px;
+  min-height: 50%;
+  padding: 15px;
+  margin: 0px;
+  left:-30%;
+}
+
+.form-newAcc {
+  position: relative;
+  left:-30%;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0px;
+}
+
+.form-signin .checkbox {
+  position: relative;
+  top:10px;
+  left:-80px;
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  /* border: 1px solid pink; */
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+#btnLogin{
+  position: relative;
+  left:180px;
+  top:-40px;
+}
+
+#btngoogle{
+  position: relative;
+  top:-40px;
+}
+
+#btnSignUp{
+  position: relative;
+  top:15px;
+}
+
+#custom-alert {
+  top: 10px;
+  position: fixed;
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+</html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    
+    <title>Post</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/offcanvas.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/post.js"></script>
+</head>
+
+<body class="bg-light" id="bo">
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color:#FFE4E1">
+        <a class="navbar-brand " href="index.html?0&0" id="GF" >Girls' Forum</a>
+        <div id="Out" class="out" >
+                <a class="log" href="signin.html">Login</a>
+            </div>
+            <div class="useruser" data-prompt="Me" id="User">  
+                <a class="uuser" href="user.html"><img src="user.png" width="55" height="55"></a>
+            </div>
+            <div id="Pen" class="pen" data-prompt1="Post">
+                <a class="postpost" href="post.html" id="pen"><img src="pen.png" alt="" width="50" height="50"></a>
+            </div>
+    </nav>
+
+    <main role="main" class="container">
+
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h5 class="border-bottom border-gray pb-2 mb-0">New Post</h5>
+            <textarea class="form-control" rows="1" cols="1" id="title" style="resize:none" placeholder="Title" id="title"></textarea>
+            <textarea class="form-control" rows="10" id="text" style="resize:none" placeholder="Say Something~"></textarea>
+            <div id="Type"> Type:
+                <Select id="selector" onchange="classify(this.value);">
+                    <option value="one">Ｍakeups</option>
+                    <option value="two">Dressup</option>
+                    <option value="three">Leisure</option>
+                </Select>
+            </div>
+            <div class="media text-muted pt-3">
+                <a class="postComplete" href="index.html?0&0" id="post_btn">Post it!</a>
+            </div>
+        </div>
+    </main>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/offcanvas.js"></script>
+</body>
+
+</html>
